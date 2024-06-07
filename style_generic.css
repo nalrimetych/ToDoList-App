@@ -1,0 +1,92 @@
+* {
+    font: 10pt black "Verdana";
+}
+
+#ToDoAppsClass {
+    background-color: #003049;
+}
+
+#titleBarFrame {
+    background-color: #9ed9f8;
+}
+
+#addToDoList {
+    background-color: #dcf0fa;
+}
+
+#titleBarFrame,
+#addToDoList {
+    border-radius: 10px;
+    border-top: 1px solid #1eacfa;
+    border-bottom: 1px solid #1eacfa;
+    border-right: 1px solid qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1, stop: 0 #1eacfa, stop: 0.5 #71889c, stop: 1.0 #1eacfa);
+    border-left: 1px solid qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1, stop: 0 #1eacfa, stop: 0.5 #71889c, stop: 1.0 #1eacfa);
+}
+
+#newTaskText,
+#titleText {
+    font: bold 11pt black "Verdana";
+}
+
+#allNewTasks,
+#allNewTasksContents {
+    border: none;
+    background-color: #103549;
+}
+
+QPushButton {
+    width: 80px;
+    height: 80px;
+    border-radius: 10px;
+    border: 3px solid rgb(182, 120, 4); /* Corrected border style */
+    background-color: orange;
+    color: black;
+    font: 10pt "Verdana";
+}
+
+QPushButton::disabled {
+    background-color: #dddddd;
+    border-color: #aaaaaa;
+    color: #aaaaaa;
+}
+
+QPushButton:hover {
+    background-color: rgb(182, 120, 4);
+    border-color: orange;
+    color: white;
+}
+
+QPushButton:pressed {
+    background-color: #aaaaaa;
+}
+
+QPushButton:checked {
+    background-color: #1eacfa;
+    border-color: #16587d;
+}
+
+QScrollBar:vertical {
+    border: 1px solid #9ed9f8;
+    background: #9ed9f8;
+    width: 5px;
+    margin: 0px 0px 0px 0px;
+}
+
+QScrollBar::handle:vertical {
+    background: #1eacfa;
+    min-height: 0px;
+}
+
+QScrollBar::add-line:vertical {
+    background: #1eacfa;
+    height: 0px;
+    subcontrol-position: bottom;
+    subcontrol-origin: margin;
+}
+
+QScrollBar::sub-line:vertical {
+    background: #1eacfa;
+    height: 0px;
+    subcontrol-position: top;
+    subcontrol-origin: margin;
+}
